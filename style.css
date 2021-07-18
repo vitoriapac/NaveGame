@@ -1,0 +1,229 @@
+:root {
+  --gold: #e67e22;
+  --dark: #141414;
+  --light: #dcdcdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+  color: var(--gold);
+}
+
+body {
+  background-image: url(./img/fundo.jpg);
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 4px;
+  color: var(--light);
+
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--gold);
+  color: var(--light);
+}
+
+#container {
+  width: 70rem;
+  height: auto;
+  position: relative;
+
+  margin-top: 8rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bg-game {
+  width: 70rem;
+  height: 40rem;
+  background-image: url(./img/fundo_game.jpg);
+  border-color: var(--light);
+  border-style: solid;
+}
+
+#jogador {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 8px;
+  top: 179px;
+  background-image: url(./img/apache.png);
+}
+
+#inimigo1 {
+  width: 16rem;
+  height: 4.125rem;
+  position: absolute;
+  left: 43rem;
+  top: 15.8rem;
+  background-image: url(./img/inimigo1.png);
+}
+
+#inimigo2 {
+  width: 10.3125rem;
+  height: 4.375rem;
+  position: absolute;
+  left: 48.4375rem;
+  top: 27.9374rem;
+  background-image: url(./img/inimigo2.png);
+}
+
+#amigo {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+  left: 10px;
+  top: 464px;
+  background-image: url(./img/amigo.png);
+}
+
+#start-game {
+  width: 21.825rem;
+  height: 12.5rem;
+  background-color: var(--light);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25rem;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.anima1 {
+  background-image: url(./img/apache.png);
+  animation: play 0.5s steps(2) infinite;
+
+  -webkit-animation: play 0.5s steps(2) infinite;
+  -moz-animation: play 0.5s steps(2) infinite;
+  -ms-animation: play 0.5s steps(2) infinite;
+  -o-animation: play 0.5s steps(2) infinite;
+}
+
+.anima2 {
+  background-image: url(./img/inimigo1.png);
+  animation: play 0.5s steps(2) infinite;
+  -webkit-animation: play 0.5s steps(2) infinite;
+  -moz-animation: play 0.5s steps(2) infinite;
+  -ms-animation: play 0.5s steps(2) infinite;
+  -o-animation: play 0.5s steps(2) infinite;
+}
+
+.anima3 {
+  background-image: url(./img/amigo.png);
+  animation: play2 0.9s steps(12) infinite;
+  -webkit-animation: play2 0.9s steps(12) infinite;
+  -moz-animation: play2 0.9s steps(12) infinite;
+  -ms-animation: play2 0.9s steps(12) infinite;
+  -o-animation: play2 0.9s steps(12) infinite;
+}
+/*Keyframes animações*/
+
+@keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-moz-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-ms-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@-o-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -512px;
+  }
+}
+
+@keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-webkit-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-moz-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-ms-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
+
+@-o-keyframes play2 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -528px;
+  }
+}
