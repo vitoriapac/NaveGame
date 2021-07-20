@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 1.5rem;
+}
+
 h1 {
   font-family: 'Black Ops One', cursive;
   font-size: 3rem;
@@ -39,6 +47,12 @@ p {
   padding-bottom: 0.5rem;
 }
 
+h3 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 1.5em;
+  color: var(--gold);
+}
+
 button {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -58,12 +72,17 @@ button:hover {
   font-weight: 700;
 }
 
+.title {
+  padding-top: 0.5rem;
+  font-size: 5.5rem;
+}
+
 #container {
   width: 70rem;
   height: auto;
   position: relative;
 
-  margin-top: 10rem;
+  margin-top: 2rem;
 
   margin-left: auto;
   margin-right: auto;
@@ -131,7 +150,7 @@ button:hover {
 }
 
 #placar {
-  width: 450px;
+  width: 600px;
   height: 50px;
   position: absolute;
   left: 5px;
@@ -169,6 +188,19 @@ button:hover {
   width: 44px;
   height: 51px;
   position: absolute;
+}
+
+#fim {
+  width: 350px;
+  height: 170px;
+  background-color: var(--light);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+  border: 0.25rem solid var(--gold);
+  border-radius: 0.5rem;
 }
 
 /* Classes de Animação */
